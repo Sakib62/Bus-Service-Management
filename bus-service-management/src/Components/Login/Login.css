@@ -102,3 +102,18 @@ body{
     font-weight: 600;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .container {
+      width: 90%;
+      height: auto;
+    }
+  
+    .inputs {
+      margin-top: 20px;
+    }
+  
+    .input {
+      width: 100%;
+    }
+  }
