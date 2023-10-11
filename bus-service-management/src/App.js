@@ -10,6 +10,9 @@ import Booking from "./Components/Booking/Booking";
 import Trips from "./Components/Trips/Trips";
 import Passenger from "./Components/Passenger/Passenger";
 import NoMatch from "./Components/NoMatch/NoMatch";
+import ChooseService from "./Components/Choose-Service/Choose-Service";
+import AvailableTrip from "./Components/Available-Trip/Available-Trip";
+import PassengerDetails from "./Components/Passenger-Details/Passenger-Details";
 
 export default function App(){
     return(
@@ -23,6 +26,9 @@ export default function App(){
               <Route path="adminBooking" element={<Booking/>} />
               <Route path="adminTrips" element={<Trips/>} />
               <Route path="adminPassenger" element={<Passenger/>} />
+                <Route path="chooseService" element={<ChooseService/>} />
+                <Route path="availableTrip" element={<AvailableTrip/>} />
+                <Route path="passengerDetails" element={<PassengerDetails/>} />
               <Route path="*" element={<NoMatch/>} />
             </Routes>
             </BrowserRouter>
