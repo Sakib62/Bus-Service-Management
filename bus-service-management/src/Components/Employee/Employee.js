@@ -1,7 +1,7 @@
 import React from "react";
 import './Employee.css';
 import Profile from "../Icons/profile.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Employee(){
     
@@ -18,11 +18,11 @@ export default function Employee(){
 
             <div className="admin-dashboard">
                 <h1>Dashboard</h1>
-                <button className="AdminButton">Bus</button>
-                <button className="AdminButton">Trips</button>
-                <button className="AdminButton">Booking</button>
-                <button className="AdminButton">Passenger</button>
-                <button className="EmployeeButton">Employee</button>
+                <button  className="AdminButton"><Link to="/adminBus" className="admin-link">Bus</Link></button>
+                <button  className="AdminButton"><Link to="/adminTrips" className="admin-link">Trips</Link></button>
+                <button  className="AdminButton"><Link to="/adminBooking" className="admin-link">Booking</Link></button>
+                <button  className="AdminButton"><Link to="/adminPassenger" className="admin-link">Passenger</Link></button>
+                <button  className="EmployeeButton">Employee</button>
             </div>
         </div> 
 
