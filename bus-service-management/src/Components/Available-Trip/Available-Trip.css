@@ -1,0 +1,626 @@
+.search-buses {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .search-buses .div {
+    background-color: #ffffff;
+    height: 1364px;
+    position: relative;
+    width: 1373px;
+  }
+  
+  .search-buses .overlap-group {
+    background-color: #2a8956;
+    height: 130px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1373px;
+  }
+  
+  .search-buses .text-wrapper {
+    color: #140d0d;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 1086px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 45px;
+  }
+  
+  .search-buses .text-wrapper-2 {
+    color: #140d0d;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 738px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 46px;
+    white-space: nowrap;
+    width: 93px;
+  }
+  
+  .search-buses .text-wrapper-3 {
+    color: #140c0d;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 583px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 45px;
+  }
+  
+  .search-buses .text-wrapper-4 {
+    color: #140d0d;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 896px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 45px;
+  }
+  
+  .search-buses .text-wrapper-5 {
+    color: #42196b;
+    font-family: "Inter-Italic", Helvetica;
+    font-size: 54px;
+    font-style: italic;
+    font-weight: 400;
+    left: 43px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 26px;
+  }
+  
+  .search-buses .text-wrapper-6 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 73px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 197px;
+  }
+  
+  .search-buses .text-wrapper-7 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 73px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 226px;
+  }
+  
+  .search-buses .text-wrapper-8 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 70px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 255px;
+  }
+  
+  .search-buses .text-wrapper-9 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 836px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 197px;
+  }
+  
+  .search-buses .text-wrapper-10 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 836px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 226px;
+  }
+  
+  .search-buses .overlap {
+    height: 57px;
+    left: 835px;
+    position: absolute;
+    top: 256px;
+    width: 185px;
+  }
+  
+  .search-buses .text-wrapper-11 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 185px;
+  }
+  
+  .search-buses .text-wrapper-12 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 1px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 28px;
+  }
+  
+  .search-buses .overlap-2 {
+    background-size: 100% 100%;
+    height: 735px;
+    left: 74px;
+    position: absolute;
+    top: 395px;
+    width: 308px;
+  }
+  
+  .search-buses .seat {
+    height: 82px;
+    left: 2px;
+    object-fit: cover;
+    position: absolute;
+    top: 65px;
+    width: 52px;
+  }
+  
+  .search-buses .img {
+    height: 82px;
+    left: 54px;
+    object-fit: cover;
+    position: absolute;
+    top: 65px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-2 {
+    height: 82px;
+    left: 54px;
+    object-fit: cover;
+    position: absolute;
+    top: 147px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-3 {
+    height: 82px;
+    left: 198px;
+    object-fit: cover;
+    position: absolute;
+    top: 65px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-4 {
+    height: 82px;
+    left: 198px;
+    object-fit: cover;
+    position: absolute;
+    top: 147px;
+    width: 52px;
+  }
+  
+  .search-buses .overlap-3 {
+    height: 160px;
+    left: 54px;
+    position: absolute;
+    top: 233px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-5 {
+    height: 82px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 52px;
+  }
+  
+  .search-buses .seat-6 {
+    height: 82px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 78px;
+    width: 52px;
+  }
+  
+  .search-buses .overlap-4 {
+    height: 162px;
+    left: 198px;
+    position: absolute;
+    top: 395px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-7 {
+    height: 82px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 80px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-8 {
+    height: 82px;
+    left: 198px;
+    object-fit: cover;
+    position: absolute;
+    top: 639px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-9 {
+    height: 82px;
+    left: 198px;
+    object-fit: cover;
+    position: absolute;
+    top: 557px;
+    width: 52px;
+  }
+  
+  .search-buses .overlap-5 {
+    height: 162px;
+    left: 198px;
+    position: absolute;
+    top: 233px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-10 {
+    height: 82px;
+    left: 56px;
+    object-fit: cover;
+    position: absolute;
+    top: 475px;
+    width: 52px;
+  }
+  
+  .search-buses .overlap-6 {
+    height: 82px;
+    left: 4px;
+    position: absolute;
+    top: 393px;
+    width: 102px;
+  }
+  
+  .search-buses .seat-11 {
+    height: 82px;
+    left: 50px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 52px;
+  }
+  
+  .search-buses .seat-12 {
+    height: 82px;
+    left: 56px;
+    object-fit: cover;
+    position: absolute;
+    top: 557px;
+    width: 52px;
+  }
+  
+  .search-buses .overlap-7 {
+    height: 82px;
+    left: 4px;
+    position: absolute;
+    top: 639px;
+    width: 102px;
+  }
+  
+  .search-buses .seat-13 {
+    height: 82px;
+    left: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 639px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-14 {
+    height: 82px;
+    left: 4px;
+    object-fit: cover;
+    position: absolute;
+    top: 557px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-15 {
+    height: 82px;
+    left: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 557px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-16 {
+    height: 82px;
+    left: 4px;
+    object-fit: cover;
+    position: absolute;
+    top: 475px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-17 {
+    height: 82px;
+    left: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 475px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-18 {
+    height: 82px;
+    left: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 393px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-19 {
+    height: 82px;
+    left: 2px;
+    object-fit: cover;
+    position: absolute;
+    top: 311px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-20 {
+    height: 82px;
+    left: 2px;
+    object-fit: cover;
+    position: absolute;
+    top: 229px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-21 {
+    height: 82px;
+    left: 252px;
+    background: red;
+    object-fit: cover;
+    position: absolute;
+    top: 311px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-22 {
+    height: 82px;
+    left: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 229px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-23 {
+    height: 82px;
+    left: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 147px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-24 {
+    height: 82px;
+    left: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 65px;
+    width: 52px;
+  }
+  
+  .search-buses .seat-25 {
+    height: 82px;
+    left: 2px;
+    object-fit: cover;
+    position: absolute;
+    top: 147px;
+    width: 52px;
+  }
+  
+  .search-buses .steering {
+    height: 47px;
+    left: 224px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 56px;
+  }
+  
+  .search-buses .seat-26 {
+    height: 72px;
+    left: 495px;
+    object-fit: cover;
+    position: absolute;
+    top: 370px;
+    width: 71px;
+  }
+  
+  .search-buses .seat-27 {
+    height: 72px;
+    left: 749px;
+    object-fit: cover;
+    position: absolute;
+    top: 372px;
+    width: 72px;
+  }
+  
+  .search-buses .seat-28 {
+    height: 72px;
+    left: 984px;
+    object-fit: cover;
+    position: absolute;
+    top: 372px;
+    width: 73px;
+  }
+  
+  .search-buses .available-seat {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 577px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 389px;
+    width: 163px;
+  }
+  
+  .search-buses .text-wrapper-13 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 832px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 389px;
+    width: 142px;
+  }
+  
+  .search-buses .text-wrapper-14 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 1068px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 389px;
+    width: 156px;
+  }
+  
+  .search-buses .overlap-8 {
+    background-color: #d9d9d9;
+    height: 49px;
+    left: 510px;
+    position: absolute;
+    top: 485px;
+    width: 714px;
+  }
+  
+  .search-buses .text-wrapper-15 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 9px;
+  }
+  
+  .search-buses .text-wrapper-16 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 230px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 9px;
+  }
+  
+  .search-buses .text-wrapper-17 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 437px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 9px;
+  }
+  
+  .search-buses .div-wrapper {
+    background-color: #d9d9d9;
+    height: 48px;
+    left: 513px;
+    position: absolute;
+    top: 835px;
+    width: 711px;
+  }
+  
+  .search-buses .text-wrapper-18 {
+    color: #2a8956;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    left: 29px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 8px;
+  }
+  
+  .search-buses .overlap-9 {
+    background-color: #35a368;
+    height: 37px;
+    left: 513px;
+    position: absolute;
+    top: 931px;
+    width: 137px;
+  }
+  
+  .search-buses .text-wrapper-19 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 5px;
+  }
