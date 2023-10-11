@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route, useNavigate, Outlet} from 'react-router-dom';
+import {Routes, Route, useNavigate, Outlet, Link} from 'react-router-dom';
 import './AdminHome.css';
 import Profile from "../Icons/profile.png"
 import greenline from "../Image/greenLine.jpeg"
@@ -18,11 +18,11 @@ export default function AdminHome(){
 
             <div className="admin-dashboard">
                 <h1>Dashboard</h1>
-                <button onClick={ () => navigate('adminBus')} className="AdminButton">Bus</button>
-                <button onClick={ () => navigate('adminTrips')} className="AdminButton">Trips</button>
-                <button onClick={ () => navigate('adminBooking')} className="AdminButton">Booking</button>
-                <button onClick={ () => navigate('adminPassenger')} className="AdminButton">Passenger</button>
-                <button onClick={ () => navigate('adminEmployee')} className="AdminButton">Employee</button>
+                <button  className="AdminButton"><Link to="/adminBus" className="admin-link">Bus</Link></button>
+                <button  className="AdminButton"><Link to="/adminTrips" className="admin-link">Trips</Link></button>
+                <button  className="AdminButton"><Link to="/adminBooking" className="admin-link">Booking</Link></button>
+                <button  className="AdminButton"><Link to="/adminPassenger" className="admin-link">Passenger</Link></button>
+                <button  className="AdminButton"><Link to="/adminEmployee" className="admin-link">Employee</Link></button>
             </div>
         </div>
         <div className="admin-bus-image">

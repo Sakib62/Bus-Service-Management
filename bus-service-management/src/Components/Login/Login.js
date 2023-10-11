@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {Routes, Route, useNavigate,Link} from 'react-router-dom';
 import './Login.css';
 
 import user_icon from '../Icons/person.png'
@@ -11,6 +11,7 @@ export default function Login(){
     const navigate = useNavigate();
 
     return(
+     <div className="login-whole">
         <div className="login-container">
             <div className="login-header">
                 <div className="login-header-text">
@@ -37,8 +38,9 @@ export default function Login(){
             <div className="login-forgot-password">Forgot Password?<span> Click Here!</span></div>
 
             <div className="login-submit-container">
-                <div onClick={ () => navigate('adminHome')} className="login-submit">Login</div>
+                <div className="login-submit"><Link to="/adminHome" className="login-link">Login</Link></div>
             </div>
         </div>
+      </div>
     )
 }

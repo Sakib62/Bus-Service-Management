@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "../Icons/profile.png";
 import './Trips.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Trips(){
     const navigate = useNavigate();
@@ -17,11 +17,11 @@ export default function Trips(){
 
         <div className="admin-dashboard">
             <h1>Dashboard</h1>
-            <button className="AdminButton">Bus</button>
-            <button className="TripsButton">Trips</button>
-            <button className="AdminButton">Booking</button>
-            <button className="AdminButton">Passenger</button>
-            <button className="AdminButton">Employee</button>
+            <button  className="AdminButton"><Link to="/adminBus" className="admin-link">Bus</Link></button>
+            <button  className="TripsButton">Trips</button>
+            <button  className="AdminButton"><Link to="/adminBooking" className="admin-link">Booking</Link></button>
+            <button  className="AdminButton"><Link to="/adminPassenger" className="admin-link">Passenger</Link></button>
+            <button  className="AdminButton"><Link to="/adminEmployee" className="admin-link">Employee</Link></button>
         </div>
         </div> 
 
