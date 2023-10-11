@@ -1,18 +1,31 @@
 import React from "react";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import './style.css'
-import Login from "./Components/Login/Login.js";
-import AdminHome from "./Components/Admin-Home/Admin-Home.js";
-import Bus from "./Components/Bus/Bus.js";
-import Employee from "./Components/Employee/Employee.js";
-import Booking from "./Components/Booking/Booking.js";
-import Trips from "./Components/Trips/Trips.js";
-import Passenger from "./Components/Passenger/Passenger.js";
+import Login from "./Components/Login/Login";
+import AdminHome from "./Components/AdminHome/AdminHome";
+import Bus from "./Components/Bus/Bus";
+import Employee from "./Components/Employee/Employee";
+import Booking from "./Components/Booking/Booking";
+import Trips from "./Components/Trips/Trips";
+import Passenger from "./Components/Passenger/Passenger";
+import NoMatch from "./Components/NoMatch/NoMatch";
 
 export default function App(){
     return(
         <div>
-            <Trips/>
+            <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Login/>} />
+              <Route path="/adminHome" element={<AdminHome/>} />  
+              <Route path="/adminHome/adminBus" element={<Bus/>} />          
+              <Route path="/adminHome/adminEmployee" element={<Employee/>} />
+              <Route path="/adminHome/adminBooking" element={<Booking/>} />
+              <Route path="/adminHome/adminTrips" element={<Trips/>} />
+              <Route path="/adminHome/adminPassenger" element={<Passenger/>} />
+              <Route path="*" element={<NoMatch/>} />
+            </Routes>
+            </BrowserRouter>
         </div>
     )
 }
