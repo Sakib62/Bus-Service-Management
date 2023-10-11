@@ -17,12 +17,12 @@ export default function App(){
             <BrowserRouter>
             <Routes>
               <Route path="/" element={<Login/>} />
-              <Route path="/adminHome" element={<AdminHome/>} />  
-              <Route path="/adminHome/adminBus" element={<Bus/>} />          
-              <Route path="/adminHome/adminEmployee" element={<Employee/>} />
-              <Route path="/adminHome/adminBooking" element={<Booking/>} />
-              <Route path="/adminHome/adminTrips" element={<Trips/>} />
-              <Route path="/adminHome/adminPassenger" element={<Passenger/>} />
+              <Route path="adminHome" element={<AdminHome/>} />  
+              <Route path="adminBus" element={<Bus/>} />          
+              <Route path="adminEmployee" element={<Employee/>} />
+              <Route path="adminBooking" element={<Booking/>} />
+              <Route path="adminTrips" element={<Trips/>} />
+              <Route path="adminPassenger" element={<Passenger/>} />
               <Route path="*" element={<NoMatch/>} />
             </Routes>
             </BrowserRouter>
