@@ -1,0 +1,14 @@
+.booking-whole{
+    display: flex;
+}
+
+.BookingButton{
+    background: transparent;
+    color:#ffff;
+    background-color: rgb(140, 191, 233);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
