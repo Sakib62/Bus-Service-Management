@@ -91,3 +91,8 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.login-link{
+    color: white;
+    text-decoration: none;
+}

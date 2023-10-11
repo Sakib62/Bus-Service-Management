@@ -6,7 +6,7 @@
 
 .admin-home{
     width: 400px;
-    height: 650px;
+    height: 850px;
     background: rgb(64, 158, 231);
 }
 
@@ -46,7 +46,11 @@
 }
 
 .admin-bus-image img{
-    width: 900px;
-    height: 650px;
+    width: 1100px;
+    height: 850px;
+}
 
+.admin-link{
+    color: white;
+    text-decoration: none;
 }
