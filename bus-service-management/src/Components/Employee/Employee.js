@@ -1,8 +1,12 @@
 import React from "react";
 import './Employee.css';
 import Profile from "../Icons/profile.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Employee(){
+    
+    const navigate = useNavigate();
+
     return(
      <div className="Employee-whole">
         <div className="admin-home">
@@ -23,9 +27,59 @@ export default function Employee(){
         </div> 
 
         <div className="employee-information">
-            <h1>This is Employee</h1>
+            <div className="employee-operation">
+            <div className="employee-search-box">
+                <input className="employee-search-input" type="text" placeholder="Search Employee"/>
+                <button className="employee-search-button">Go</button>
+            </div>
+            <div className="employee-add-box">
+                <button className="employee-add-box-button">Add New Employee</button>
+            </div>
+            </div>
+            <div className="employee-div-table">            
+                <table className="employee-table">
+                     <tr>
+                        <th>NID</th>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Joining Year</th>
+                        <th>Salary</th>
+                        <th>Contact</th>
+                
+                     </tr>
+                     <tr>
+                        <td>1</td>
+                        <td>Rafi</td>
+                        <td>Driver</td>
+                        <td>2018</td>
+                        <td>30,000</td>
+                        <td>0199999999</td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                     </tr>
+                     <tr>
+                        <td>2</td>
+                        <td>Sakib</td>
+                        <td>Manager</td>
+                        <td>2019</td>
+                        <td>50,000</td>
+                        <td>0188888888</td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                     </tr>
+                     <tr>
+                        <td>3</td>
+                        <td>Mahir</td>
+                        <td>Supervison</td>
+                        <td>2020</td>
+                        <td>10,000</td>
+                        <td>01777777777</td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                     </tr>
+                </table>
+            </div>
         </div>
-
       </div>
     )
 }
