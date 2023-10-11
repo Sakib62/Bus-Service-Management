@@ -1,8 +1,11 @@
 import React from "react";
 import Profile from "../Icons/profile.png";
 import './Passenger.css';
+import { useNavigate } from "react-router-dom";
 
 export default function Booking(){
+    const navigate = useNavigate();
+
     return(
      <div className="Passenger-whole">
         <div className="admin-home">
