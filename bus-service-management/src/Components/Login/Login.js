@@ -1,4 +1,5 @@
 import React from "react";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import './Login.css';
 
 import user_icon from '../Icons/person.png'
@@ -6,6 +7,9 @@ import email_icon from '../Icons/email.png'
 import password_icon from '../Icons/password.png'
 
 export default function Login(){
+
+    const navigate = useNavigate();
+
     return(
         <div className="login-container">
             <div className="login-header">
@@ -33,7 +37,7 @@ export default function Login(){
             <div className="login-forgot-password">Forgot Password?<span> Click Here!</span></div>
 
             <div className="login-submit-container">
-                <div className="login-submit">Login</div>
+                <div onClick={ () => navigate('adminHome')} className="login-submit">Login</div>
             </div>
         </div>
     )
