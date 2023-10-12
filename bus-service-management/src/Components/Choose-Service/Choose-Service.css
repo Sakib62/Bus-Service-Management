@@ -6,7 +6,7 @@
 }
 
 .home-page .overlap {
-  background-color: #2a8956;
+  background-color: #3fd184;
   height: 130px;
   left: 0;
   position: absolute;
@@ -255,16 +255,18 @@
 }
 
 .home-page .text-wrapper-9 {
-  color: #111112;
+  background: transparent;
   font-family: "Inter-ExtraLight", Helvetica;
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 22px;
+  font-weight: 400;
   left: 181px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   top: 10px;
   white-space: nowrap;
+  border: none;
+
 }
 
 .home-page .buspic {
@@ -274,4 +276,10 @@
   position: absolute;
   top: 227px;
   width: 656px;
+}
+
+.service-search{
+  text-decoration: none;
+  border: none;
+  color: white;
 }

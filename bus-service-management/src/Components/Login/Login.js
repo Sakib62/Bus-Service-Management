@@ -38,7 +38,8 @@ export default function Login(){
             <div className="login-forgot-password">Forgot Password?<span> Click Here!</span></div>
 
             <div className="login-submit-container">
-                <div className="login-submit"><Link to="/adminHome" className="login-link">Login</Link></div>
+                <div className="login-submit"><Link to="/adminHome" className="login-link">Admin</Link></div>
+                <div className="login-submit"><Link to="/chooseService" className="login-link">Counter</Link></div>
             </div>
         </div>
       </div>

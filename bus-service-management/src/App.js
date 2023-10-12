@@ -26,9 +26,9 @@ export default function App(){
               <Route path="adminBooking" element={<Booking/>} />
               <Route path="adminTrips" element={<Trips/>} />
               <Route path="adminPassenger" element={<Passenger/>} />
-                <Route path="chooseService" element={<ChooseService/>} />
-                <Route path="availableTrip" element={<AvailableTrip/>} />
-                <Route path="passengerDetails" element={<PassengerDetails/>} />
+              <Route path="chooseService" element={<ChooseService/>} />
+              <Route path="availableTrip" element={<AvailableTrip/>} />
+              <Route path="passengerDetails" element={<PassengerDetails/>} />
               <Route path="*" element={<NoMatch/>} />
             </Routes>
             </BrowserRouter>

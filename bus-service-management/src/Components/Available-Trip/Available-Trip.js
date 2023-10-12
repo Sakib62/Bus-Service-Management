@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SteeringPic from "../Image/Steering.jpg"
 import SeatPic from "../Image/Seat.png"
 import greenSeat from "../Image/greenSeat.png"
@@ -11,10 +12,8 @@ export default function AvailableTrip() {
       <div className="div">
         <div className="overlap-group">
           <button className="text-wrapper">Logout</button>
-          {/* <div className="text-wrapper-2">Login</div>
-          <div className="text-wrapper-3">Home</div>
-          <div className="text-wrapper-4">Register</div> */}
-          <div className="text-wrapper-5">GreenLine</div>
+          
+          <div className="text-wrapper-5">GreenLine Bus Lt.</div>
         </div>
         <div className="text-wrapper-6">Starting Point : Sylhet</div>
         <div className="text-wrapper-7">Ending Point : Dhaka</div>
@@ -86,7 +85,7 @@ export default function AvailableTrip() {
           <div className="text-wrapper-18">Total : 1800</div>
         </div>
         <div className="overlap-9">
-          <div className="text-wrapper-19">Continue</div>
+          <div className="text-wrapper-19"><Link to="/passengerDetails" className="available-trip-continue">Continue</Link></div>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BusPic from "../Image/busPic.jpg"
 import './Choose-Service.css';
 
@@ -7,7 +8,7 @@ export default function ChooseService() {
       <div className="home-page">
       <div className="overlap">
         <button className="text-wrapper">Logout</button>
-        <div className="text-wrapper-4">GreenLine</div>
+        <div className="text-wrapper-4">GreenLine Bus Lt.</div>
       </div>
       <div className="overlap-group">
         <div className="from" />
@@ -32,7 +33,7 @@ export default function ChooseService() {
       <div className="text-wrapper-8">Time</div>
       <div className="overlap-group-2">
         <div className="search-buses" />
-        <button className="text-wrapper-9">Search</button>
+        <button className="text-wrapper-9"><Link to="/availableTrip" className="service-search">Search</Link></button>
       </div>
       <img className="buspic" alt="Buspic" src={BusPic} />
     </div>
