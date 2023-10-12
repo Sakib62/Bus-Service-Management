@@ -38,7 +38,7 @@ export default function Employee(){
             </div>
             <div className="employee-div-table">            
                 <table border="1" className="employee-table">
-                    <capton className="employee-table-caption">Employee information</capton>
+                
                      <tr className="employee-table-head">
                         <th className="employee-head-information">NID</th>
                         <th className="employee-head-information">Name</th>

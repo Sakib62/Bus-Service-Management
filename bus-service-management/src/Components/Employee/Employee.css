@@ -64,12 +64,6 @@
     justify-content: center;
 }
 
-.employee-table-caption{
-    background-color: white;
-    font-size: 30px;
-    margin-top: 50px;
-}
-
 .employee-table{
     align-items: center;
 }
