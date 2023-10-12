@@ -2,6 +2,17 @@
     display: flex;
 }
 
+.BusButton{
+    background: transparent;
+    color:#ffff;
+    background-color: rgb(140, 191, 233);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .bus-operation{
     display: flex;
 
@@ -46,22 +57,17 @@
     cursor: pointer;
 }
 
-.BusButton{
-    background: transparent;
-    color:#ffff;
-    background-color: rgb(140, 191, 233);
-    border: none;
-    outline: none;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
 .bus-div-table{
-    margin: 50px;
+   
     background: #f4d6d6;
     align-items: center;
     justify-content: center;
+}
+
+.bus-table-caption{
+    background-color: white;
+    font-size: 30px;
+    margin-top: 50px;
 }
 
 .bus-table{
@@ -75,6 +81,7 @@
 
 .bus-head-information{
     gap: 20px;
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-right: 20px ;
     font-size: 20px;
 }

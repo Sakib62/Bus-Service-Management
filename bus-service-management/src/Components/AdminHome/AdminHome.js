@@ -23,6 +23,7 @@ export default function AdminHome(){
                 <button  className="AdminButton"><Link to="/adminBooking" className="admin-link">Booking</Link></button>
                 <button  className="AdminButton"><Link to="/adminPassenger" className="admin-link">Passenger</Link></button>
                 <button  className="AdminButton"><Link to="/adminEmployee" className="admin-link">Employee</Link></button>
+                <button  className="AdminButton"><Link to="/" className="admin-link">Log Out</Link></button>
             </div>
         </div>
         <div className="admin-bus-image">

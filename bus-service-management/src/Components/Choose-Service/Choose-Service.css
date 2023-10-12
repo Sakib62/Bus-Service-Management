@@ -14,8 +14,8 @@
   width: 1373px;
 }
 
-.home-page .text-wrapper {
-  color: #140d0d;
+ .choose-service-logout{
+  background: transparent;
   font-family: "Inter-Regular", Helvetica;
   font-size: 25px;
   font-weight: 400;
@@ -24,6 +24,13 @@
   line-height: normal;
   position: absolute;
   top: 45px;
+  border: none;
+}
+
+.choose-service-logout-link{
+  text-decoration: none;
+  color: rgb(95, 77, 77);
+  font-size: 30px;
 }
 
 .home-page .div {

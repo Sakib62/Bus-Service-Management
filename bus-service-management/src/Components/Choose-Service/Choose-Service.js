@@ -7,7 +7,7 @@ export default function ChooseService() {
     return (
       <div className="home-page">
       <div className="overlap">
-        <button className="text-wrapper">Logout</button>
+        <button className="choose-service-logout"><Link to="/" className="choose-service-logout-link">Log Out</Link></button>
         <div className="text-wrapper-4">GreenLine Bus Lt.</div>
       </div>
       <div className="overlap-group">
