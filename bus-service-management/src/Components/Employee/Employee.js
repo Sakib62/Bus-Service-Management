@@ -37,15 +37,16 @@ export default function Employee(){
             </div>
             </div>
             <div className="employee-div-table">            
-                <table className="employee-table">
-                     <tr>
-                        <th>NID</th>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Joining Year</th>
-                        <th>Salary</th>
-                        <th>Contact</th>
-                
+                <table border="1" className="employee-table">
+                    <capton className="employee-table-caption">Employee information</capton>
+                     <tr className="employee-table-head">
+                        <th className="employee-head-information">NID</th>
+                        <th className="employee-head-information">Name</th>
+                        <th className="employee-head-information">Position</th>
+                        <th className="employee-head-information">Joining Year</th>
+                        <th className="employee-head-information">Salary</th>
+                        <th className="employee-head-information">Contact</th>
+                        <th className="employee-head-information">Action</th>
                      </tr>
                      <tr>
                         <td>1</td>
