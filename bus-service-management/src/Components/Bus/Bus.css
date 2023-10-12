@@ -2,6 +2,50 @@
     display: flex;
 }
 
+.bus-operation{
+    display: flex;
+
+}
+
+.bus-search-input{
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: #f4d6d6;
+    border-radius: 6px;
+}
+
+.bus-search-button{
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    color: white;
+    background-color: #6c5881;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.bus-add-box{
+    padding-left: 200px;
+}
+
+.bus-add-box-button{
+    text-decoration: none;
+    border: none;
+    background-color: #6c5881;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .BusButton{
     background: transparent;
     color:#ffff;
@@ -13,3 +57,24 @@
     cursor: pointer;
 }
 
+.bus-div-table{
+    margin: 50px;
+    background: #f4d6d6;
+    align-items: center;
+    justify-content: center;
+}
+
+.bus-table{
+    align-items: center;
+}
+
+.bus-table-head{
+    gap: 20px;
+    background-color: #cbb4e2;
+}
+
+.bus-head-information{
+    gap: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}

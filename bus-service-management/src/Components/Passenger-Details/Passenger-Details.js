@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Passenger-Details.css';
 
 export default function PassengerDetails() {
@@ -7,22 +8,16 @@ return (
         <div className="div">
         <div className="overlap">
             <button className="text-wrapper">Logout</button>
-            {/* <div className="text-wrapper-2">Login</div>
-            <div className="text-wrapper-3">Home</div>
-            <div className="text-wrapper-4">Register</div> */}
-            <div className="text-wrapper-5">GreenLine</div>
+            
+            <div className="text-wrapper-5">GreenLine Bus Lt.</div>
         </div>
         <div className="overlap-group">
             <div className="text-wrapper-6">Passenger Details</div>
         </div>
         <div className="div-wrapper">
-            <button className="text-wrapper-7">Confirm</button>
+            <button className="text-wrapper-7"><Link to="/chooseService" className="passenger-details-confirm">Confirm</Link></button>
         </div>
-        {/* <input
-            className="name"
-            // placeholder="Name&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;:"
-            // type="text"
-        /> */}
+        
         <div className="name">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</div>
         <div className="gender">Gender&nbsp;&nbsp;&nbsp; :</div>
         <div className="phone">Phone&nbsp;&nbsp;&nbsp;&nbsp; :</div>

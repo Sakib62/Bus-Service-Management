@@ -14,7 +14,7 @@
   }
   
   .passenger-details .overlap {
-    background-color: #2a8956;
+    background-color: #3fd184;
     height: 130px;
     left: 0;
     position: absolute;
@@ -118,7 +118,6 @@
   }
   
   .passenger-details .text-wrapper-7 {
-    color: #140d0d;
     font-family: "Inter-Regular", Helvetica;
     font-size: 24px;
     font-weight: 400;
@@ -127,6 +126,13 @@
     line-height: normal;
     position: absolute;
     top: 10px;
+    background: transparent;
+    border: none;
+  }
+
+  .passenger-details-confirm{
+    text-decoration: none;
+    color: white;
   }
   
   .passenger-details .name {
