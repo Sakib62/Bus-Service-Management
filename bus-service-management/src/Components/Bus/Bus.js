@@ -37,6 +37,7 @@ export default function Bus(){
             </div>
             <div className="bus-div-table">            
                 <table border="1" className="bus-table">
+                    <caption className="bus-table-caption">Bus Information Table</caption>
                      <tr className="bus-table-head">
                         <th className="bus-head-information">Bus Model</th>
                         <th className="bus-head-information">License No.</th>
