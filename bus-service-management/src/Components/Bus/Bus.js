@@ -36,14 +36,15 @@ export default function Bus(){
             </div>
             </div>
             <div className="bus-div-table">            
-                <table className="bus-table">
-                     <tr>
-                        <th>Bus Model</th>
-                        <th>License No.</th>
-                        <th>Manucfacturer</th>
-                        <th>Capacity</th>
-                        <th>Purchasing Year</th>
-                        <th>Type</th>
+                <table border="1" className="bus-table">
+                     <tr className="bus-table-head">
+                        <th className="bus-head-information">Bus Model</th>
+                        <th className="bus-head-information">License No.</th>
+                        <th className="bus-head-information">Manucfacturer</th>
+                        <th className="bus-head-information">Capacity</th>
+                        <th className="bus-head-information">Purchasing Year</th>
+                        <th className="bus-head-information">Type</th>
+                        <th className="bus-head-information">Action</th>
                 
                      </tr>
                      <tr>

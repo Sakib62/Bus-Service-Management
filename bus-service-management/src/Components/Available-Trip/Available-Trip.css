@@ -14,7 +14,7 @@
   }
   
   .search-buses .overlap-group {
-    background-color: #2a8956;
+    background-color: #3fd184;
     height: 130px;
     left: 0;
     position: absolute;
@@ -614,7 +614,7 @@
   }
   
   .search-buses .text-wrapper-19 {
-    color: #000000;
+
     font-family: "Inter-Regular", Helvetica;
     font-size: 24px;
     font-weight: 400;
@@ -623,4 +623,10 @@
     line-height: normal;
     position: absolute;
     top: 5px;
+    background: transparent;
+  }
+
+  .available-trip-continue{
+    color: white;
+    text-decoration: none;
   }
