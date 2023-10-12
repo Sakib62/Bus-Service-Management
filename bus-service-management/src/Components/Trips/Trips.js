@@ -35,45 +35,42 @@ export default function Trips(){
             </div>
             <div className="trips-div-table">            
                 <table className="trips-table">
-                     <tr>
-                        <th>Trip No.</th>
-                        <th>Source</th>
-                        <th>Destination</th>
-                        <th>Departure Time</th>
-                        <th>Arrival Time</th>
-                        <th>Date</th>
-                        <th>Coach No.</th>
-                        <th>Driver ID</th>
-                        <th>Number of Passenger</th>
-                
+                     <tr className="trips-table-head">
+                        <th className="trips-head-information">Trip No.</th>
+                        <th className="trips-head-information">Source</th>
+                        <th className="trips-head-information">Destination</th>
+                        <th className="trips-head-information">Coach No.</th>
+                        <th className="trips-head-information">Driver ID</th>
+                        <th className="trips-head-information">Number of Passenger</th>
+                        <th className="trips-head-information">Action</th>
                      </tr>
                      <tr>
                         <td>1</td>
-                        <td>Rafi</td>
-                        <td>Driver</td>
-                        <td>2018</td>
-                        <td>30,000</td>
-                        <td>0199999999</td>
+                        <td>Sylhet</td>
+                        <td>Dhaka</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>20</td>
                         <button>Edit</button>
                         <button>Delete</button>
                      </tr>
                      <tr>
                         <td>2</td>
-                        <td>Sakib</td>
-                        <td>Manager</td>
-                        <td>2019</td>
-                        <td>50,000</td>
-                        <td>0188888888</td>
+                        <td>Chattogram</td>
+                        <td>Feni</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>30</td>
                         <button>Edit</button>
                         <button>Delete</button>
                      </tr>
                      <tr>
                         <td>3</td>
-                        <td>Mahir</td>
-                        <td>Supervison</td>
-                        <td>2020</td>
-                        <td>10,000</td>
-                        <td>01777777777</td>
+                        <td>Dhaka</td>
+                        <td>Sylhet</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>15</td>
                         <button>Edit</button>
                         <button>Delete</button>
                      </tr>
