@@ -56,11 +56,11 @@ const Dashboard = () => {
               </li>
               <li className="w-100">
                 <Link
-                  to="/dashboard/profile"
+                  to="/dashboard/passenger"
                   className="nav-link px-0 align-middle text-white"
                 >
                   <i className="fs-4 bi-person ms-2"></i>
-                  <span className="ms-2 d-none d-sm-inline">Profile</span>
+                  <span className="ms-2 d-none d-sm-inline">Passenger</span>
                 </Link>
               </li>
               <li className="w-100">
@@ -70,6 +70,15 @@ const Dashboard = () => {
                 >
                   <i className="fs-4 bi-bus-front ms-2"></i>
                   <span className="ms-2 d-none d-sm-inline">Manage Bus</span>
+                </Link>
+              </li>
+              <li className="w-100">
+                <Link
+                  to="/dashboard/services"
+                  className="nav-link px-0 align-middle text-white"
+                >
+                  <i className="fs-4 bi bi-tools ms-2"></i>
+                  <span className="ms-2 d-none d-sm-inline">Services</span>
                 </Link>
               </li>
               <li className="w-100" onClick={handleLogout}>
