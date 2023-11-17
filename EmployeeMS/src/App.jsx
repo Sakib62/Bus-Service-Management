@@ -10,6 +10,7 @@ import Profile from './Components/Profile'
 import Bus from './Components/Bus'
 import AddCategory from './Components/AddCategory'
 import AddEmployee from './Components/AddEmployee'
+import AddBus from './Components/AddBus'
 import EditEmployee from './Components/EditEmployee'
 import Start from './Components/Start'
 import EmployeeLogin from './Components/EmployeeLogin'
@@ -36,7 +37,9 @@ function App() {
         <Route path='/dashboard/bus' element={<Bus/>}></Route>
         <Route path='/dashboard/add_category' element={<AddCategory />}></Route>
         <Route path='/dashboard/add_employee' element={<AddEmployee />}></Route>
+        <Route path='/dashboard/add_bus' element={<AddBus />}></Route>
         <Route path='/dashboard/edit_employee/:id' element={<EditEmployee />}></Route>
+        
       </Route>
     </Routes>
     </BrowserRouter>

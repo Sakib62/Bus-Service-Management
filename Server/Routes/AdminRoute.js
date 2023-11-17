@@ -26,6 +26,7 @@ router.post("/adminlogin", (req, res) => {
   });
 });
 
+//category
 router.get('/category', (req, res) => {
     const sql = "SELECT * FROM category";
     con.query(sql, (err, result) => {
@@ -39,6 +40,15 @@ router.post('/add_category', (req, res) => {
     con.query(sql, [req.body.category], (err, result) => {
         if(err) return res.json({Status: false, Error: "Query Error"})
         return res.json({Status: true})
+    })
+})
+
+router.delete('/delete_category/:id', (req, res) => {
+    const id = req.params.id;
+    const sql = "delete from category where id = ?"
+    con.query(sql,[id], (err, result) => {
+        if(err) return res.json({Status: false, Error: "Query Error"+err})
+        return res.json({Status: true, Result: result})
     })
 })
 
@@ -116,6 +126,42 @@ router.put('/edit_employee/:id', (req, res) => {
 router.delete('/delete_employee/:id', (req, res) => {
     const id = req.params.id;
     const sql = "delete from employee where id = ?"
+    con.query(sql,[id], (err, result) => {
+        if(err) return res.json({Status: false, Error: "Query Error"+err})
+        return res.json({Status: true, Result: result})
+    })
+})
+
+//bus
+router.get('/bus', (req, res) => {
+    const sql = "SELECT * FROM bus";
+    con.query(sql, (err, result) => {
+        if(err) return res.json({Status: false, Error: "Query Error"})
+        return res.json({Status: true, Result: result})
+    })
+})
+
+router.post('/add_bus', (req, res) => {
+    const sql = `INSERT INTO bus 
+    (licence,model,manufacturer, seat)  
+    VALUES (?)`;
+
+    const values = [
+        req.body.licence,
+        req.body.model,
+        req.body.manufacturer,
+        req.body.seat,
+    ]
+
+    con.query(sql, [values], (err, result) => {
+        if(err) return res.json({Status: false, Error: "Query Error"})
+        return res.json({Status: true})
+    })
+})
+
+router.delete('/delete_bus/:id', (req, res) => {
+    const id = req.params.id;
+    const sql = "delete from bus where id = ?"
     con.query(sql,[id], (err, result) => {
         if(err) return res.json({Status: false, Error: "Query Error"+err})
         return res.json({Status: true, Result: result})
