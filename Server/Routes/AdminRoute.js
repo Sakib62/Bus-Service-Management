@@ -168,6 +168,44 @@ router.delete('/delete_bus/:id', (req, res) => {
     })
 })
 
+//services
+router.get('/services', (req, res) => {
+    const sql = "SELECT * FROM services";
+    con.query(sql, (err, result) => {
+        if(err) return res.json({Status: false, Error: "Query Error"})
+        return res.json({Status: true, Result: result})
+    })
+})
+
+router.post('/add_services', (req, res) => {
+    const sql = `INSERT INTO services
+    (coach,source,destination,departure_time,price,total_seat)  
+    VALUES (?)`;
+
+    const values = [
+        req.body.coach,
+        req.body.source,
+        req.body.destination,
+        req.body.departure_time,
+        req.body.price,
+        req.body.total_seat
+    ]
+
+    con.query(sql, [values], (err, result) => {
+        if(err) return res.json({Status: false, Error: "Query Error"})
+        return res.json({Status: true})
+    })
+})
+
+router.delete('/delete_services/:coach', (req, res) => {
+    const coach = req.params.coach;
+    const sql = "delete from services where coach = ?"
+    con.query(sql,[coach], (err, result) => {
+        if(err) return res.json({Status: false, Error: "Query Error"+err})
+        return res.json({Status: true, Result: result})
+    })
+})
+
 router.get('/admin_count', (req, res) => {
     const sql = "select count(id) as admin from admin";
     con.query(sql, (err, result) => {
