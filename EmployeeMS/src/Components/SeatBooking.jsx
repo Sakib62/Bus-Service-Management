@@ -1,5 +1,3 @@
-// SeatBooking.js
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./SeatBooking.css";
@@ -12,7 +10,6 @@ function SeatBooking() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch the data from your backend
     axios
       .get("http://localhost:3000/journeyDetails")
       .then((response) => {
@@ -21,9 +18,9 @@ function SeatBooking() {
       .catch((error) => {
         console.error("Error fetching journey details:", error);
       });
-  }, []); // Empty dependency array to ensure the effect runs only once
+  }, []);
 
-  const seatPrice = journeyDetails.price; // Assuming each seat costs $10
+  const seatPrice = journeyDetails.price;
 
   // Function to convert seat number to letter and number format (e.g., A1, B2, C3)
   const convertSeatNumber = (seatNumber) => {
@@ -34,11 +31,8 @@ function SeatBooking() {
     return `${rowLetter}${seatInRow}`;
   };
 
-  // Function to handle seat selection
   const handleSeatClick = (seatNumber) => {
     const newSelectedSeats = [...selectedSeats];
-    //const convertedSeatNumber = convertSeatNumber(seatNumber);
-
     const seatIndex = newSelectedSeats.indexOf(seatNumber);
 
     if (seatIndex === -1) {
@@ -50,7 +44,6 @@ function SeatBooking() {
     setSelectedSeats(newSelectedSeats);
   };
 
-  // Function to calculate total cost
   const calculateTotalCost = () => {
     return selectedSeats.length * seatPrice;
   };
@@ -59,10 +52,7 @@ function SeatBooking() {
   const handleProceed = (event) => {
     event.preventDefault();
 
-    // Calculate total cost
     const totalCost = calculateTotalCost();
-
-    // Create data object with total cost and selected seats
     const data = {
       coach: journeyDetails.coach_no,
       source: journeyDetails.source,
@@ -78,7 +68,6 @@ function SeatBooking() {
       .put("http://localhost:3000/storedata2", data)
       .then((response) => {
         console.log(response);
-        // Add logic to handle the response if needed
       })
       .catch((error) => {
         console.error("Error sending data to the backend:", error);
@@ -161,8 +150,6 @@ function SeatBooking() {
       </div>
 
       <div className="bottom-right">
-        {/* Display selected seats */}
-        {/* <div> */}
         <label className="fixit">
           <strong>Selected Seats : </strong>
         </label>
@@ -173,15 +160,10 @@ function SeatBooking() {
             ))}
           </div>
         )}
-        {/* </div> */}
-        {/* Display total cost */}
-        {/* <div> */}
         <label className="doit">
           <strong>Total Cost:</strong>
         </label>
         {selectedSeats.length > 0 && <span>৳{calculateTotalCost()}</span>}
-        {/* </div> */}
-        {/* Proceed button */}
         {selectedSeats.length > 0 && (
           <button onClick={handleProceed} className="eatit">
             Continue

@@ -1,4 +1,3 @@
-// PassengerDetails.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./PassengerDetails.css";
@@ -18,7 +17,6 @@ function PassengerDetails() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch the data from your backend
     axios
       .get("http://localhost:3000/journeyDetails2")
       .then((response) => {
@@ -27,7 +25,7 @@ function PassengerDetails() {
       .catch((error) => {
         console.error("Error fetching journey details:", error);
       });
-  }, []); // Empty dependency array to ensure the effect runs only once
+  }, []);
 
   const handleConfirmTicket = () => {
     // Validate inputs
@@ -48,17 +46,6 @@ function PassengerDetails() {
       return;
     }
 
-    // const data = {
-    //     coach : journeyDetails.coach_no,
-    //     source : journeyDetails.source,
-    //     destination : journeyDetails.destination,
-    //     dtime : journeyDetails.dtime,
-    //     ddate : journeyDetails.ddate,
-    //     price : journeyDetails.price,
-    //     seats: journeyDetails.seats, // Convert array to a comma-separated string
-    //     totalCost: journeyDetails.totalCost,
-    //   };
-
     //to store passenger data
     const data = {
       name: name,
@@ -71,7 +58,6 @@ function PassengerDetails() {
       .put("http://localhost:3000/storepassenger", data)
       .then((response) => {
         console.log(response);
-        // Add logic to handle the response if needed
       })
       .catch((error) => {
         console.error("Error sending data to the backend:", error);
@@ -79,7 +65,6 @@ function PassengerDetails() {
 
     setShowConfirmButton(true);
 
-    // Add logic to send passenger details to the backend
     console.log("Confirming ticket with the following details:", {
       name,
       nid,
@@ -89,22 +74,19 @@ function PassengerDetails() {
   };
 
   const handleGeneratePdf = () => {
-    // Create a new jsPDF instance
     const pdf = new jsPDF();
 
-    // Set font style and size
     pdf.setFont("helvetica");
     pdf.setTextColor(255, 0, 0); // Red
 
     // Add a banner at the top
-    pdf.setFillColor(255, 20, 20); // Red background
+    pdf.setFillColor(255, 20, 20);
     pdf.rect(0, 0, 210, 20, "F"); // Rectangle for the banner
 
-    pdf.setTextColor(255, 255, 255); // White text
-    pdf.setFontSize(16); // Set font size to 16
-    pdf.text("Unique Service", 10, 15); // Text in the banner
+    pdf.setTextColor(255, 255, 255);
+    pdf.setFontSize(16);
+    pdf.text("Unique Service", 10, 15);
 
-    // Reset text color, font type, and font size to black and normal for the rest of the document
     pdf.setTextColor(0, 0, 0);
     pdf.setFontSize(14);
 
@@ -116,14 +98,11 @@ function PassengerDetails() {
 
     // Right half of the box
     const today = new Date();
-    // today.setDate(today.getDate() + 1);
-    // Right half of the box
     pdf.text("Journey Date: " + journeyDetails.ddate, 140, 50);
     pdf.text("To: " + journeyDetails.destination, 140, 60);
     pdf.text("Issued On: " + today.toISOString().split("T")[0], 140, 70);
     pdf.text("Total Cost: " + journeyDetails.total_cost, 140, 80);
 
-    // Save the PDF as a file
     pdf.save("Ticket.pdf");
     navigate("/");
   };
@@ -133,7 +112,6 @@ function PassengerDetails() {
     //to store ticket data
 
     const today = new Date();
-    //today.setDate(today.getDate() + 1);
 
     const tkct = {
       nid: nid,
@@ -273,7 +251,6 @@ function PassengerDetails() {
           <p>
             <b>Total cost: ৳{journeyDetails.total_cost}</b>
           </p>
-          {/* ... (rest of the journey details code) */}
         </div>
       </div>
     </div>
