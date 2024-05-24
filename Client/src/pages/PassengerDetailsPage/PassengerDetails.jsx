@@ -77,7 +77,7 @@ function PassengerDetails() {
     const pdf = new jsPDF();
 
     pdf.setFont("helvetica");
-    pdf.setTextColor(255, 0, 0); // Red
+    pdf.setTextColor(255, 0, 0);
 
     // Add a banner at the top
     pdf.setFillColor(255, 20, 20);
@@ -134,7 +134,6 @@ function PassengerDetails() {
 
   return (
     <div>
-      {/* Banner */}
       <div className="banner">
         <h2>Bus Ticket System</h2>
       </div>
