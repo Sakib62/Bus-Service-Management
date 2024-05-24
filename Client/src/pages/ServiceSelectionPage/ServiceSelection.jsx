@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styles from './ServiceSelection.module.css';
+import './ServiceSelection.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useNavigate } from 'react-router-dom';
@@ -66,7 +66,7 @@ function ServiceSelection() {
 
   return (
     <div>
-      <div className={styles.banner}>
+      <div className="banner">
         <button onClick={() => {navigate('/employee_login')}}>
           Employee
         </button>
@@ -76,7 +76,7 @@ function ServiceSelection() {
         </button>
       </div>
 
-      <div className={styles.container}>
+      <div className="container">
         <form onSubmit={handleSubmit}>
           <label htmlFor="source"><strong>From</strong></label>
           <select id="source" name="source" value={selectedSource} onChange={handleSourceChange}>
@@ -114,7 +114,7 @@ function ServiceSelection() {
             />
           </div>
 
-          <div className={styles.error}>{error}</div>
+          <div className="error">{error}</div>
           <button type="submit"><strong>Search</strong></button>
         </form>
       </div>
